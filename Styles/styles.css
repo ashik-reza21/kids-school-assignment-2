@@ -1,10 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-.open-sans-font {
-  font-family: "Open Sans", serif;
+.quicksand-font {
+  font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: <400>;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+}
+body{
+  background-color: white;
+}
+
+/* shared styles */
+.display-flex{
+  display: flex;
+}
+
+
+/* header styles */
+.btn-contact{
+  background-color: orange;
+  color: white;
+  padding: 10px 60.5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+}
+
+
+/* navbar related styles */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 140px;
+}
+.brand{
+  font-weight: 700;
+  align-items: center;
+}
+.logo{
+  gap: 11px;
+}
+.brand-logo{
+  max-height: 62px;
+  max-width: 62px;
+}
+.nav-items{
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-link{
+  text-decoration: aqua;
+  font-weight: 500;  
+}
+
+.navbar, .banner-box{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* banner-related-styles */
+.banner-box{
+  max-width: 1440px;
+  align-items: center;
+  padding: 0 140px;
+  gap: 50px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.enroll-button{
+  background-color: black;
+  color: white;
+  padding: 10px 60.5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  gap: 20px;
 }
