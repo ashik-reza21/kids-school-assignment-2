@@ -6,15 +6,14 @@
   font-weight: <400>;
   font-style: normal;
 }
-body{
+/* body{
   background-color: white;
-}
+} */
 
 /* shared styles */
 .display-flex{
   display: flex;
 }
-
 
 /* header styles */
 .btn-contact{
@@ -22,11 +21,26 @@ body{
   color: white;
   padding: 10px 60.5px;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 12px;
   border: none;
 }
-
+.hamburger-menu{
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+}
+.hamburger-menu span{
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 3s ease-in-out;
+}
 
 /* navbar related styles */
 .navbar{
@@ -70,6 +84,19 @@ body{
 .banner-title{
   font-weight: 700;
   font-size: 4rem;
+  gap: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#empowering{
+  color: orange;
+}
+#towards-vision{
+  color: #01ACFD;
+}
+.banner-description{
+  font-size: 1.4rem;
 }
 
 .enroll-button{
@@ -77,8 +104,161 @@ body{
   color: white;
   padding: 10px 60.5px;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   border-radius: 12px;
   border: none;
   gap: 20px;
+}
+
+/* curriculum-section */
+
+.curriculum-title{
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  }
+
+.curriculum-section{
+  background-image: url('/assets/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1440px;
+  height: 879px;
+  }
+
+.curriculum-card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+}
+.curriculum-card1{
+  width: 367.8;
+  height: 476.78;
+  background: linear-gradient(0deg, #ffffff 0%, #e6f7ff 100%);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 20px 40px;
+  padding: 20px;
+  border: 0.94px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.curriculum-card2{
+  width: 367.8;
+  height: 476.78;
+  background: linear-gradient(0deg, #ffffff 0%, #FFF4DC 100%);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 20px 40px;
+  padding: 20px;
+  border: 0.94px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.curriculum-card3{
+  width: 367.8;
+  height: 476.78;
+  background: linear-gradient(0deg, #ffffff 0%, #F2E8FF 100%);
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin: 20px 40px;
+  padding: 20px;
+  border: 0.94px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.navigaion-btn{
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.prev-next-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.prev-next-btn li{
+  list-style: none;
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: .3s;
+}
+.prev-next-btn li span{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 4px solid #ffffff;
+  transition: 0.3s;
+}
+.prev-next-btn li.next span{
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%) rotate(-45deg);
+  border-left: none;
+  border-top: none;
+}
+
+.prev-next-btn li.prev span{
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%) rotate(-45deg);
+  border-right: none;
+  border-bottom: none;
+}
+.story-title{
+  font-size: 3.6rem;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+
+}
+.stories-img-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+  .brand, .nav-items, .btn-contact{
+    display: none;
+  }
+  .hamburger-menu{
+    display: flex;
+  }
+  .banner-box {
+    flex-direction: column-reverse;
+    width: auto;
+    padding: 12px 16px;
+    text-align: center;
+    align-items: center;
+  }
+  .curriculum-section{
+    width: auto;
+    padding: 12px 16px;
+  }
+.curriculum-card{
+  grid-template-columns: 1fr;
+}
+
 }
